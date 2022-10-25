@@ -1,0 +1,58 @@
+.header {
+    &-wrap {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    &-logo {
+        flex: 0 0 180px;
+    }
+    &-content {
+        flex: 0 0 calc(100% - 210px);
+        &-top {
+            margin-bottom: 30px;
+            gap: 20px;
+            &-field {
+                position: relative;
+                 max-width: 850px;
+                width: 100%;
+            }
+            &-num {
+                flex: 0 0 260px;
+                font-size: rem(30);
+                font-weight: 500;
+                color: $silverColor;
+                &:hover {
+                    color: red;
+                }
+            }
+            &-icon {
+                flex:0 0 145px;
+                max-width: 145px;
+                
+            }
+        }
+    }
+    &-input {
+        font-size: rem(20);
+        &-search {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: none;
+            height: 100%;
+            width: 50px;
+            background-image: url(./../images/icon/search-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 26px 26px;
+            cursor: pointer;
+        }
+    }
+    &-svg-icon {
+        max-width: 28px;
+        height: 27px;
+        &:hover {
+            fill: red;
+        }
+    }
+}

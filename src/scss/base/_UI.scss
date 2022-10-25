@@ -1,0 +1,47 @@
+.ui {
+    &-btn {
+        display: inline-block;
+        height: 57px;
+        line-height: 55px;
+        max-width: 100%;
+        border: 1px solid #172542;
+        border-radius: 32px;
+        background-color: #172542;
+        padding: 0 20px;
+        font-weight: 700;
+        font-size: rem(16);
+        color: #FFF;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: .3s background-color, .3s color, .3s border-color, .3s box-shadow;
+        &:hover {
+            background-color: red;
+        }
+    }
+    &-input {
+        display: block;
+        height: 57px;
+        line-height: 55px;
+        width: 100%;
+        max-width: 100%;
+        background: #FFFFFF;
+        padding: 0px 50px;
+        font-weight: 400;
+        font-size: rem(14);
+        color: red;
+        border: 1px solid #D9E4F1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: .3s border, .3s color;
+        border-radius: 32px;
+        outline: none;
+        -webkit-appearance: none;
+        &::placeholder {
+            color: #BECCDC;
+        }
+    }
+}
